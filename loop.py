@@ -79,11 +79,11 @@ for i in range(1,2*row):
 
 print("pattern 6")
 n=5
+import math   
 for row in range(1,n+1):
     spaces=n-i
     for s in range(1,spaces+1):
         print(" ",end = " ")
-
 #     for j in range(1,((2*i)-1)+1):
     col=row
     while(col>=1):
@@ -91,34 +91,40 @@ for row in range(1,n+1):
         col=col-1
     for ko in range(2,row+1):
         print(ko ,end=" ")
-            
-    
-        
+
     print("\n")      
+'''
+4 4 4 4 4 4 4 4 4 
+
+4 3 3 3 3 3 3 3 4 
+
+4 3 2 2 2 2 2 3 4 
+
+4 3 2 1 1 1 2 3 4 
+
+4 3 2 1 0 1 2 3 4 
+
+4 3 2 1 1 1 2 3 4 
+
+4 3 2 2 2 2 2 3 4 
+
+4 3 3 3 3 3 3 3 4 
+
+4 4 4 4 4 4 4 4 4 
+
+'''
+print("pattern 7\n")
+n=4
+N=2*n
+for row in range(0,2*n+1):
+    for col in range(0,2*n+1):
+        
+        min_val=min(row,col,N-(col),N-(row))
+        min_val=n - min_val
+        print(min_val,end=" ")
+    print("\n")
+    
+    
             
-            
-print("[[[[")
-i=6
-while(i>=3):
-    print("l")
-    i=i-1;
-print("\n")
-# def pattern(n):
-#     k = 2 * n - 2
-#     for i in range(0, n):
-#         for j in range(0 , k):
-#             print(end=" ")
-#         k = k - 1
-#         for j in range(0 , i + 1 ):
-#             print("* ", end="")
-#         print("\r")
-#     k = n - 2
-#     for i in range(n , -1, -1):
-#         for j in range(k , 0 , -1): 
-#             print(end=" ")
-#         k = k + 1
-#         for j in range(0 , i + 1):
-#             print("* ", end="")
-#         print("\r")
-#  
-# pattern(5)
+
+    
